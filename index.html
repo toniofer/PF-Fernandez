@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Titulo de la página-->
+    <title>Pre entrega 3 Desarrollo Web - Index</title>
+    <!--Etiquetas META Relevantes-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pre entrega 3 DESARROLLO WEB">
+
+    <!--Enlace a CSS-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="container-fluid p-0 sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg px-2 ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" height="50" width="auto"
+                        id="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center " id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/venta.html">Venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/alquiler.html">Alquiler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- IMAGEN PORTADA -->
+
+        <section id="imagenIndex" class="container-fluid p-0">
+            <div class="row">
+                <h1>Alquiler y venta de propiedades en Uruguay</h1>
+                <img src="./images/portada.jpg" alt="Portada index">
+            </div>
+
+        </section>
+
+
+
+        <!-- PROPIEDADES DESTACADAS -->
+
+        <section id="propiedades_destacadas" class="container">
+            <div class="row my-4">
+                <h2>PROPIEDADES DESTACADAS</h2>
+            </div>
+            <div class="row justify-content-center " id="prop_destacadas">
+
+                <div class="col-sm-12 col-md-6 p-2">
+                    <article class="destacadas  p-2" id="destacada1">
+                        <figure>
+                            <img src="./images/destacada1.jpg" alt="Destacada 1">
+                            <figcaption>
+                                <h3>Las artes</h3>
+                                <p>Excelentes apartamentos en venta en pleno centro de la ciudad, con todos los
+                                    servicios al
+                                    alcance de la mano.</p>
+                            </figcaption>
+                            <a href="modal1">Más información</a>
+                        </figure>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-6 p-2">
+
+                    <article class="destacadas  p-2" id="destacada2">
+                        <figure>
+                            <img src="./images/destacada2.jpg" alt="Destacada 2">
+                            <figcaption>
+                                <h3>Plaza Goes</h3>
+                                <p>Venta o alquiler de apartamentos a estrenar en espectacular punto geográfico de la
+                                    ciudad. </p>
+                            </figcaption>
+                            <a href="#">Más información</a>
+                        </figure>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MODAL -->
+
+        <h2>holaaaaaaaaaaaaaa</h2>
+
+
+
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        <!-- INFORMACION PERSONALIZADA -->
+
+
+
+        <section id="informacion_personalizada" class="container p-2 mt-4">
+            <div id="info_personalizada" class="row  h-100 m-0 py-4">
+                <article id="info" class="col-sm-12 col-md-6 text-center text-lg-start ">
+                    <h4>Nuevos lanzamientos</h4>
+                    <p>Ingrese su correo electrónico para recibir nuestras novedades</p>
+                </article>
+                <article id="article_suscripcion" class="col-sm-12 col-md-6 pt-4">
+                    <input id="mail" type="email" name="">
+                    <a href="#">Suscribirse</a>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- PROPIEDADES DESTACADAS 2 -->
+        <section id="propiedades_destacadas2" class="container mt-4 text-center">
+            <div class="row h-100">
+                <div class="col-sm-12 col-md-3 p-2">
+                    <article id="foto_grande" class="imagen-con-marco2 p-2 h-100 ">
+                        <figure class="">
+                            <img src="./images/Villa Karpov.jpeg" alt="Villa Karpov">
+                            <figcaption>
+                                <h5>Villa Karpov</h5>
+                                <p>Espectacular vivienda con moderno diseño arquitectónico incomparable.</p>
+                            </figcaption>
+                            <a href="#">Más información</a>
+                        </figure>
+                    </article>
+                </div>
+
+
+                <section id="fotos_chicas" class="col-sm-12 col-md-9 ">
+                    <section id="fotos_chicas_arriba" class="row h-50">
+
+                        <div class="col-sm-4 col-md-4  p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure class="">
+                                    <img src="./images/Casa_Carlsen.jpeg" alt="Casa Carlsen">
+                                    <figcaption>
+                                        <h6 class="mt-2">Casa Carlsen</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4 ">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure>
+                                    <img src="./images/Casa_San_Sebastian.jpeg" alt="San Sebastián">
+                                    <figcaption>
+                                        <h6 class="mt-2">San Sebastián</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure>
+                                    <img src="./images/Casa_Capablanca.jpeg" alt="Casa Capablanca">
+                                    <figcaption>
+                                        <h6 class="mt-2">Casa Capablanca</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+                    </section>
+
+                    <section id="fotos_chicas_abajo" class="row h-50">
+
+                        <div class="col-sm-4 col-md-4  p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure>
+                                    <img src="./images/La_Francesa.jpeg" alt="La Francesa">
+                                    <figcaption>
+                                        <h6 class="mt-2">La Francesa</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure>
+                                    <img src="./images/La_Siciliana.jpeg" alt="La Siciliana">
+                                    <figcaption>
+                                        <h6 class="mt-2">La Siciliana</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4  p-2">
+                            <article class="imagen-con-marco3 h-100">
+                                <figure>
+                                    <img src="./images/Villa_Alekine.jpeg" alt="Villa Alekine">
+                                    <figcaption>
+                                        <h6 class="mt-2">Villa Alekine</h6>
+                                    </figcaption>
+                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
+                                </figure>
+                            </article>
+                        </div>
+
+
+
+                    </section>
+                </section>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- IMAGEN INFERIOR -->
+
+        <section id="imagen_inferior" class="container-fluid p-0 d-none d-md-block">
+            <h2>Nos especializamos en venta y alquiler de propiedades, asesoramiento y post venta en todo el Uruguay
+            </h2>
+            <img src="./images/portada_inferior.jpeg" alt="Portada inferior">
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid p-0 mt-4 mt-md-0 ">
+        <section id="foot" class="p-4 ">
+            <div class="container">
+                <div class="row h-100 p-2">
+                    <article id="mapa" class="col-12 col-md-7 col-lg-8 col-xl-9 p-0 m-0">
+                        <iframe id="mapa_google" class="h-100 m-0 p-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2184.765757409969!2d-56.0186424324335!3d-34.87004596610923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f88a29f4bb72b%3A0x5a958f3a715c822a!2sAv.%20a%20la%20Playa%202150%2C%2015000%20Ciudad%20de%20la%20Costa%2C%20Departamento%20de%20Canelones!5e0!3m2!1ses!2suy!4v1722839502487!5m2!1ses!2suy"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </article>
+                    <article id="datos_contacto"
+                        class="col-12  col-md-5 col-lg-4 col-xl-3 mt-md-0 text-center text-md-start mt-4 m-md-0 ps-4">
+
+                        <h5 class="ms-4">Datos Contacto:</h5>
+                        <nav id="nav_redes_contacto" class="mt-2 ms-4">
+                            <ul>
+                                <li id="direccion"><a href="" class=""> <img src="./images/casita.svg" alt="logo casita"></a>
+                                    <p>Av. a la Playa 2450, Solymar</p>
+                                </li>
+                                <li id="telefono"><a href="" class=""><img src="./images/telefono.svg" alt="logo teléfono"></a>
+                                    <p>24567889 - 099 123456</p>
+                                </li>
+                                <li id="correo"><a href="" class=""><img src="./images/correo.svg" alt="logo correo"></a>
+                                    <p>info@costainmobiliaria.com.uy</p>
+                                </li>
+                                <li id="whatsapp"><a href="" class=""><img src="./images/whatsapp.svg" alt="logo whatsapp"></a>
+                                    <p>099 132456</p>
+                                </li>
+                                <li id="messenger"><a href="" class=""><img src="./images/messenger.svg" alt="logo messenger"></a>
+                                    <p>costa inmobiliaria</p>
+                                </li>
+                                <li id="facebook"><a href="" class=""><img src="./images/facebook.svg" alt="logo facebook"></a>
+                                    <p>costa inmobiliaria</p>
+                                </li>
+                                <li id="instagram"><a href="" class=""><img src="./images/instagram.svg" alt="logo instagram"></a>
+                                    <p>@costa inmobiliaria</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="foot_color" class="p-4 m-0 d-flex flex-column justify-content-center ">
+            <p class="col-12 text-center">Copyright 2024 - Desarrollo Web CODERHOUSE </p>
+        </section>
+
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

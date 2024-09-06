@@ -1,0 +1,614 @@
+//*******************     MAIN     ********************************/
+
+main {
+    color: $color-base6;
+    text-align: center;
+    padding: 0;
+    border: 0;
+
+    #imagenIndex {
+        position: relative;
+        display: inline-block;
+
+        img {
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: $color-fondo1;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+            bottom: 10%;
+            text-shadow:
+                -3px -3px 0 $color-borde-h,
+                3px -3px 0 $color-borde-h,
+                -3px 3px 0 $color-borde-h,
+                3px 3px 0 $color-borde-h;
+        }
+    }
+
+    ////////////// PROPIEDADES DESTACADAS //////////////////////
+
+    #propiedades_destacadas {
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            color: $color-base1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            letter-spacing: 8px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background-color: $color-base1;
+            color: $color-fondo1;
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            font-weight: 400;
+            margin-top: 26px;
+
+            &:hover{
+                transition: 0.2s; 
+                box-shadow: 0 0 0 0.25rem $color-base1;         
+            }
+        }
+
+        .destacadas {
+            border: solid 1px $color-base1-recuadro;
+            background-color: $color-fondo1;
+
+            img {
+                width: 100%;
+                height: 340px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    ////////// INFORMACIÓN PERSONALIZADA  //////////////
+
+
+    #info_personalizada {
+        text-align: center;
+        background-color: $color-fondo1;
+
+        a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background-color: $color-base1;
+            color: $color-fondo1;
+            padding: 8px 24px 8px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            font-weight: 200;
+            margin: 20px 20px 20px 40px;
+
+            &:hover{
+                transition: 0.2s; 
+                box-shadow: 0 0 0 0.25rem $color-base1;         
+            }
+        }
+
+        #mail {
+            width: 300px;
+            height: 40px;
+            border: solid 1px $color-base1-hover;
+            font-size: 1rem;
+        }
+
+        h4 {
+            color: $color-base1;
+            letter-spacing: 4px;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        h5 {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin: 10px 20px 10px 20px;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin: 10px 20px 10px 20px;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+
+
+
+    .imagen-con-marco2 {
+        border: solid 1px $color-base1-recuadro;
+        background-color: $color-fondo1;
+
+        img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            display: block;
+        }
+
+        h5 {
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 10px;
+            letter-spacing: 8px;
+            font-size: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background-color: $color-base1;
+            color: $color-fondo1;
+            padding: 9px 18px 9px 18px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            font-weight: 400;
+            margin-top: 24px;
+
+            &:hover{
+                transition: 0.2s; 
+                box-shadow: 0 0 0 0.25rem $color-base1; 
+                font-weight: 500;   
+                letter-spacing: 4px;     
+            }
+        }
+    }
+
+    .imagen-con-marco3 {
+        display: block;
+        padding: 8px;
+        border: solid rgba(90, 13, 13, 0.196) 1px;
+        background-color: $color-fondo1;
+
+        img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        h6 {
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background-color: $color-base1;
+            color: $color-fondo1;
+            padding: 8px 16px 8px 16px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            font-weight: 400;
+
+            &:hover{
+                transition: 0.2s; 
+                box-shadow: 0 0 0 0.25rem $color-base1; 
+                font-weight: 500; 
+                letter-spacing: 4px;       
+            }
+        }
+    }
+
+    ///////////// IMAGEN INFERIOR //////////
+
+    #imagen_inferior {
+        margin-top: 60px;
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            color: $color-fondo1;
+            font-weight: bold;
+            width: 80%;
+            display: inline-block;
+            text-align: center;
+            margin-left: 10%;
+            position: absolute;
+            top: 40%;
+            letter-spacing: 1px;
+            text-shadow:
+                -1px -1px 0 $color-borde-h,
+                1px -1px 0 $color-borde-h,
+                -1px 1px 0 $color-borde-h,
+                1px 1px 0 $color-borde-h;
+        }
+    }
+}
+
+
+
+
+////////////////   PÁGINA VENTAS   //////////   
+
+
+.imagen_con_marco4 {
+    border: solid 1px $color-base1-recuadro;
+    background-color: $color-fondo1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: $color-fondo1;
+        font-weight: bold;
+        margin-top: 60px;
+        background-color: $color-background-h;
+        padding: 12px 24px;
+        letter-spacing: 4px;
+    }
+
+    a {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        background-color: $color-base1;
+        border: 1px solid $color-fondo1;
+        color: $color-fondo1;
+        padding: 12px 32px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 400;
+
+        &:hover{
+            transition: 0.2s; 
+            box-shadow: 0 0 0 0.25rem $color-fondo1;         
+        }
+    }
+}
+
+.filtros_seleccionados {
+    h6 {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background-color: $color-base4;
+        color: $color-fondo1;
+        margin: 4px 4px 4px 0;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border: 3px solid $color-base1;
+        padding: 6px 12px;
+        border-radius: 8px;
+        color: $color-base1;
+        margin: 4px 4px 4px 12px;
+        letter-spacing: 3px;
+        font-weight: 500;
+
+        &:hover{
+            transition: 0.2s; 
+            box-shadow: 0 0 0 0.25rem $color-base1;         
+        }
+    }
+}
+
+.form-select {
+
+    width: 180px;
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin: 5px 10px 5px 0px;
+    border-color: $color-base1;
+
+    &:focus {
+        border-color: $color-base1-focus;
+        box-shadow: 0 0 0 0.25rem $color-base1-focus;
+
+    }
+}
+
+
+#propiedades_venta {
+    h4 {
+        color: $color-base1;
+        letter-spacing: 3px;
+        padding-inline: 8px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    h5 {
+        display: inline-block;
+    }
+}
+
+.imagen-con-marco4 {
+    display: block;
+    padding: 8px;
+    border: solid 1px $color-base1-recuadro;
+    background-color: $color-fondo1;
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    h5 {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+
+    a {
+        align-items: center;
+        margin-top: 30px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid $color-base1;
+        color: $color-base1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+        width: 100%;
+
+        &:hover{
+            transition: 0.2s; 
+            box-shadow: 0 0 0 0.25rem $color-base1;         
+        }
+    }
+}
+
+
+#propiedades_alquiler {
+    h4 {
+        color: $color-base1;
+        letter-spacing: 3px;
+        padding-inline: 8px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: inline-block;
+    }
+}
+
+
+////////////////      NOSOTROS    /////////////
+
+
+#nosotros {
+
+    h4 {
+        color: $color-base1;
+        letter-spacing: 4px;
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    div {
+        text-align: justify;
+    }
+}
+
+#imagenes_nosotros {
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+        &:hover{            
+            transform: scale(1.08);
+            transition: 0.5s;
+        }
+    }
+}
+
+#staff {
+    h4 {
+        color: $color-base1;
+        letter-spacing: 4px;
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .fundadores {
+        display: grid;
+        grid-template-areas:
+            "figura encabezados"
+            "parrafo parrafo";
+        grid-row: 120px auto;
+        grid-template-columns: 120px auto;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: $color-fondo1;
+        border: 1px solid $color-base1-recuadro;
+
+        figure {
+            grid-area: figura;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+            /*
+            &:hover{
+                width: 100*1.15px;
+                height: 100*1.15px;
+                transition: 0.5s;
+            }*/
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+        }
+
+        p {
+            grid-area: parrafo;
+            text-align: justify;
+        }
+    }
+}
+
+
+//////////////// CONTACTO   ////////////////
+
+#imagen_contacto {
+    height: 400px;
+    width: 100%;
+    position: relative;
+
+    img {
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: $color-fondo1;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 5px;
+        text-shadow:
+            -1px -1px 0 $color-borde-h,
+            1px -1px 0 $color-borde-h,
+            -1px 1px 0 $color-borde-h,
+            1px 1px 0 $color-borde-h;
+    }
+}
+
+/// FORMULARIO //////////////////
+
+
+#formulario_contacto {
+    padding: 20px;
+    width: 100%;
+    background-color: $color-fondo1;
+    border-top: 20px;
+
+    h3 {
+        color: $color-base1;
+        margin: 10px 10px 20px 20px;
+    }
+}
+
+
+.mi-formulario {
+
+    border: 1px solid $color-base1;
+
+    .form-control {
+        border: 1px solid $color-base1-recuadro;
+        height: 40px;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 4px;
+    }
+
+    #consulta {
+        width: 100%;
+        height: 160px;
+        border: 1px solid $color-base1-recuadro;
+        resize: none;
+        border-radius: 8px;
+    }
+
+    #boton_formulario {
+        padding: 8px 28px;
+        color: $color-fondo1;
+        background-color: $color-base1;
+        border-radius: 8px;
+        letter-spacing: 4px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &:hover{
+            transition: 0.2s; 
+            box-shadow: 0 0 0 0.25rem $color-base1; 
+            font-weight: 600; 
+            letter-spacing: 5px;         
+        }
+    }
+}
+
+#logo_casita{
+    width: 80px;
+    height: auto;
+}

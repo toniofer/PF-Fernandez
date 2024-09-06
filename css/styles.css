@@ -1,0 +1,589 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.navbar .navbar-toggler {
+  border: 2px solid rgb(102, 36, 0);
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .navbar-toggler .navbar-toggler-icon:before {
+  content: "☰";
+  color: rgb(102, 36, 0);
+  font-size: 24px;
+}
+.navbar .navbar-toggler:not(.collapsed) {
+  box-shadow: 0px 0px 0px 3px rgba(102, 36, 0, 0.9);
+}
+.navbar .navbar-toggler.collapsed {
+  box-shadow: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(102, 36, 0);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 10px 30px !important;
+}
+.navbar ul li a:hover {
+  background-color: rgba(102, 36, 0, 0.9);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+}
+footer #mapa_google {
+  width: 100%;
+  height: 500px;
+}
+footer iframe {
+  width: 100%;
+  height: auto;
+}
+footer nav {
+  display: inline-block;
+}
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer nav img {
+  display: inline-block;
+  width: 24px;
+  height: auto;
+}
+footer nav p {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+footer nav h5 {
+  margin: 0;
+}
+footer #foot_color {
+  background-color: rgb(102, 36, 0);
+  color: white;
+}
+footer #foot_color p {
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: rgba(40, 54, 53, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 0;
+  border: 0;
+}
+main #imagenIndex {
+  position: relative;
+  display: inline-block;
+}
+main #imagenIndex img {
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+main #imagenIndex h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  text-shadow: -3px -3px 0 rgba(0, 0, 0, 0.4), 3px -3px 0 rgba(0, 0, 0, 0.4), -3px 3px 0 rgba(0, 0, 0, 0.4), 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+main #propiedades_destacadas {
+  text-align: center;
+}
+main #propiedades_destacadas h2 {
+  text-align: center;
+  color: rgb(102, 36, 0);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main #propiedades_destacadas h3 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  letter-spacing: 8px;
+  font-size: 1.2rem;
+}
+main #propiedades_destacadas p {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+main #propiedades_destacadas a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-top: 26px;
+}
+main #propiedades_destacadas a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+}
+main #propiedades_destacadas .destacadas {
+  border: solid 1px rgba(102, 36, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+main #propiedades_destacadas .destacadas img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+main #info_personalizada {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+main #info_personalizada a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 20px 20px 20px 40px;
+}
+main #info_personalizada a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+}
+main #info_personalizada #mail {
+  width: 300px;
+  height: 40px;
+  border: solid 1px rgba(102, 36, 0, 0.9);
+  font-size: 1rem;
+}
+main #info_personalizada h4 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main #info_personalizada h5 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 10px 20px 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main #info_personalizada p {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 10px 20px 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main .imagen-con-marco2 {
+  border: solid 1px rgba(102, 36, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+main .imagen-con-marco2 img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+main .imagen-con-marco2 h5 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 8px;
+  font-size: 1rem;
+}
+main .imagen-con-marco2 a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+  padding: 9px 18px 9px 18px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+main .imagen-con-marco2 a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main .imagen-con-marco3 {
+  display: block;
+  padding: 8px;
+  border: solid rgba(90, 13, 13, 0.196) 1px;
+  background-color: rgb(255, 255, 255);
+}
+main .imagen-con-marco3 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+main .imagen-con-marco3 h6 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+main .imagen-con-marco3 a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+main .imagen-con-marco3 a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main #imagen_inferior {
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+}
+main #imagen_inferior img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  text-align: center;
+}
+main #imagen_inferior h2 {
+  font-size: 2.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10%;
+  position: absolute;
+  top: 40%;
+  letter-spacing: 1px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.imagen_con_marco4 {
+  border: solid 1px rgba(102, 36, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.imagen_con_marco4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagen_con_marco4 h2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.777);
+  padding: 12px 24px;
+  letter-spacing: 4px;
+}
+.imagen_con_marco4 a {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.imagen_con_marco4 a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+}
+
+.filtros_seleccionados h6 {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: rgb(0, 102, 98);
+  color: rgb(255, 255, 255);
+  margin: 4px 4px 4px 0;
+}
+.filtros_seleccionados a {
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid rgb(102, 36, 0);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: rgb(102, 36, 0);
+  margin: 4px 4px 4px 12px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.filtros_seleccionados a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+}
+
+.form-select {
+  width: 180px;
+  display: inline-block;
+  padding-right: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin: 5px 10px 5px 0px;
+  border-color: rgb(102, 36, 0);
+}
+.form-select:focus {
+  border-color: rgba(102, 36, 0, 0.427);
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+}
+
+#propiedades_venta h4 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 3px;
+  padding-inline: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#propiedades_venta h5 {
+  display: inline-block;
+}
+
+.imagen-con-marco4 {
+  display: block;
+  padding: 8px;
+  border: solid 1px rgba(102, 36, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+.imagen-con-marco4 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.imagen-con-marco4 h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.imagen-con-marco4 p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.imagen-con-marco4 a {
+  align-items: center;
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgb(102, 36, 0);
+  color: rgb(102, 36, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  width: 100%;
+}
+.imagen-con-marco4 a:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+}
+
+#propiedades_alquiler h4 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 3px;
+  padding-inline: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+#nosotros h4 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#nosotros div {
+  text-align: justify;
+}
+
+#imagenes_nosotros img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#imagenes_nosotros img:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+
+#staff h4 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#staff .fundadores {
+  display: grid;
+  grid-template-areas: "figura encabezados" "parrafo parrafo";
+  grid-row: 120px auto;
+  grid-template-columns: 120px auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(102, 36, 0, 0.3);
+}
+#staff .fundadores figure {
+  grid-area: figura;
+}
+#staff .fundadores img {
+  width: 100px;
+  height: 100px;
+  /*
+  &:hover{
+      width: 100*1.15px;
+      height: 100*1.15px;
+      transition: 0.5s;
+  }*/
+}
+#staff .fundadores div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+#staff .fundadores p {
+  grid-area: parrafo;
+  text-align: justify;
+}
+
+#imagen_contacto {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+#imagen_contacto img {
+  object-fit: cover;
+}
+#imagen_contacto h2 {
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 5px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#formulario_contacto {
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-top: 20px;
+}
+#formulario_contacto h3 {
+  color: rgb(102, 36, 0);
+  margin: 10px 10px 20px 20px;
+}
+
+.mi-formulario {
+  border: 1px solid rgb(102, 36, 0);
+}
+.mi-formulario .form-control {
+  border: 1px solid rgba(102, 36, 0, 0.3);
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+.mi-formulario #consulta {
+  width: 100%;
+  height: 160px;
+  border: 1px solid rgba(102, 36, 0, 0.3);
+  resize: none;
+  border-radius: 8px;
+}
+.mi-formulario #boton_formulario {
+  padding: 8px 28px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(102, 36, 0);
+  border-radius: 8px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mi-formulario #boton_formulario:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+#logo_casita {
+  width: 80px;
+  height: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
