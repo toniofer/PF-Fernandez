@@ -85,6 +85,12 @@ footer #foot_color p {
   letter-spacing: 1px;
   margin-bottom: 0px;
 }
+footer #datos_contacto div {
+  width: 240px;
+}
+footer #datos_contacto div h5 {
+  display: inline-block;
+}
 
 body {
   background-color: rgba(40, 54, 53, 0.1);

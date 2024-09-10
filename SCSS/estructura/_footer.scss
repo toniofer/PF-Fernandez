@@ -16,6 +16,7 @@ footer {
 
     nav {
         display: inline-block;
+     
 
         ul {
             list-style-type: none;
@@ -49,4 +50,16 @@ footer {
             margin-bottom: 0px;
         }
     }
+
+
+    #datos_contacto {
+        div{          
+            width: 240px;
+            h5{
+                display: inline-block;
+            }
+        }
+    }
+
+
 }
