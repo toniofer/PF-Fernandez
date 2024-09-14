@@ -286,33 +286,98 @@ main #info_personalizada p {
   font-size: 1.2rem;
   font-weight: 400;
 }
-main .imagen-con-marco2 {
+main .imagen-con-marco, main .imagen-con-marco--5, main .imagen-con-marco--4, main .imagen-con-marco-figure, main .imagen-con-marco-figure--3, main .imagen-con-marco-figure--2 {
   border: solid 1px rgba(102, 36, 0, 0.3);
   background-color: rgb(255, 255, 255);
 }
-main .imagen-con-marco2 figure {
+main .imagen-con-marco-figure figure, main .imagen-con-marco-figure--3 figure, main .imagen-con-marco-figure--2 figure {
   margin: 0;
 }
-main .imagen-con-marco2 figure div {
+main .imagen-con-marco-figure figure div, main .imagen-con-marco-figure--3 figure div, main .imagen-con-marco-figure--2 figure div {
   overflow: hidden;
 }
-main .imagen-con-marco2 figure div img {
+main .imagen-con-marco-figure figure div img, main .imagen-con-marco-figure--3 figure div img, main .imagen-con-marco-figure--2 figure div img {
   width: 100%;
-  height: 340px;
   object-fit: cover;
-  display: block;
 }
-main .imagen-con-marco2 figure div img:hover {
+main .imagen-con-marco-figure figure div img:hover, main .imagen-con-marco-figure--3 figure div img:hover, main .imagen-con-marco-figure--2 figure div img:hover {
   transform: scale(1.08);
   transition: 0.8s;
 }
-main .imagen-con-marco2 figure h5 {
+main .imagen-con-marco-figure--2 figure div img {
+  height: 340px;
+}
+main .imagen-con-marco-figure--2 figure h5 {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 10px;
   letter-spacing: 8px;
   font-size: 1rem;
   font-weight: 600;
+}
+main .imagen-con-marco-figure--3 {
+  display: block;
+  padding: 8px;
+}
+main .imagen-con-marco-figure--3 figure div img {
+  height: 160px;
+}
+main .imagen-con-marco-figure--3 figure h6 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+main .imagen-con-marco--4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+main .imagen-con-marco--4 div {
+  overflow: hidden;
+  width: 100%;
+}
+main .imagen-con-marco--4 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .imagen-con-marco--4 div img:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
+main .imagen-con-marco--4 h2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.777);
+  padding: 12px 24px;
+  letter-spacing: 4px;
+  z-index: 1;
+}
+main .imagen-con-marco--5 {
+  display: block;
+  padding: 8px;
+}
+main .imagen-con-marco--5 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+main .imagen-con-marco--5 h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main .imagen-con-marco--5 p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 main .marco2 {
   display: inline-block;
@@ -321,33 +386,6 @@ main .marco2 {
 main .marco3 {
   display: inline-block;
   height: 290px;
-}
-main .imagen-con-marco3 {
-  display: block;
-  padding: 8px;
-  border: solid rgba(90, 13, 13, 0.196) 1px;
-  background-color: rgb(255, 255, 255);
-}
-main .imagen-con-marco3 figure {
-  margin: 0;
-}
-main .imagen-con-marco3 figure div {
-  overflow: hidden;
-}
-main .imagen-con-marco3 figure div img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-main .imagen-con-marco3 figure div img:hover {
-  transform: scale(1.08);
-  transition: 0.8s;
-}
-main .imagen-con-marco3 figure h6 {
-  text-align: center;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
-  font-weight: 600;
 }
 main #imagen_inferior {
   margin-top: 60px;
@@ -374,42 +412,49 @@ main #imagen_inferior h2 {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
+/*
 .imagen-con-marco4 {
-  border: solid 1px rgba(102, 36, 0, 0.3);
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-}
-.imagen-con-marco4 div {
-  overflow: hidden;
-  width: 100%;
-}
-.imagen-con-marco4 div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.imagen-con-marco4 div img:hover {
-  transform: scale(1.08);
-  transition: 0.8s;
-}
-.imagen-con-marco4 h2 {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  margin-top: 60px;
-  background-color: rgba(0, 0, 0, 0.777);
-  padding: 12px 24px;
-  letter-spacing: 4px;
-  z-index: 1;
-}
+    border: solid 1px $color-base1-recuadro; //
+    background-color: $color-fondo1; //
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 400px;
 
+    div {
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.08);
+                transition: 0.8s;
+            }
+        }
+    }
+
+
+    h2 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: $color-fondo1;
+        font-weight: bold;
+        margin-top: 60px;
+        background-color: $color-background-h;
+        padding: 12px 24px;
+        letter-spacing: 4px;
+        z-index: 1;
+    }
+
+
+} */
 .filtros_seleccionados h6 {
   display: inline-block;
   padding: 6px 12px;
@@ -462,49 +507,31 @@ main #imagen_inferior h2 {
   display: inline-block;
 }
 
+/*
 .imagen-con-marco5 {
-  display: block;
-  padding: 8px;
-  border: solid 1px rgba(102, 36, 0, 0.3);
-  background-color: rgb(255, 255, 255);
-  /*   a {
-         align-items: center;//
-         margin-top: 30px;
-         display: inline-block;//
-         text-align: center;
-         text-decoration: none;//
-         border: 2px solid $color-base1;
-         color: $color-base1;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         border-radius: 10px;
-         font-size: 1rem;
-         letter-spacing: 4px;
-         font-weight: 600;
-         width: 100%;
+    display: block;
+    padding: 8px;
+    border: solid 1px $color-base1-recuadro;
+    background-color: $color-fondo1;
 
-         &:hover {
-             transition: 0.2s;
-             box-shadow: 0 0 0 0.25rem $color-base1;
-             letter-spacing: 5px;
-         }
-     }*/
-}
-.imagen-con-marco5 img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-.imagen-con-marco5 h5 {
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.imagen-con-marco5 p {
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-}
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
 
+    h5 {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+
+} */
 #propiedades_alquiler h4 {
   color: rgb(102, 36, 0);
   letter-spacing: 3px;
@@ -558,12 +585,6 @@ main #imagen_inferior h2 {
 #staff .fundadores img {
   width: 100px;
   height: 100px;
-  /*
-  &:hover{
-      width: 100*1.15px;
-      height: 100*1.15px;
-      transition: 0.5s;
-  }*/
 }
 #staff .fundadores div {
   display: flex;
