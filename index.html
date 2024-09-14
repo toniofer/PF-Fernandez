@@ -26,7 +26,7 @@
     <header class="container-fluid p-0 sticky-top bg-white">
         <nav class="navbar navbar-expand-lg px-2 ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" height="50" width="auto"
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" height="60" width="auto"
                         id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -84,14 +84,16 @@
                 <div class="col-sm-12 col-md-6 p-2">
                     <article class="destacadas  p-2" id="destacada1">
                         <figure>
-                            <img src="./images/destacada1.jpg" alt="Destacada 1">
+                            <div>
+                                <img src="./images/destacada1.jpg" alt="Destacada 1">
+                            </div>
                             <figcaption>
                                 <h3>Las artes</h3>
                                 <p>Excelentes apartamentos en venta en pleno centro de la ciudad, con todos los
                                     servicios al
                                     alcance de la mano.</p>
                             </figcaption>
-                            <a href="modal1">Más información</a>
+                            <a class="boton-link--destacadas"    href="modal1">Más información</a>
                         </figure>
                     </article>
                 </div>
@@ -100,13 +102,15 @@
 
                     <article class="destacadas  p-2" id="destacada2">
                         <figure>
-                            <img src="./images/destacada2.jpg" alt="Destacada 2">
+                            <div>
+                                <img src="./images/destacada2.jpg" alt="Destacada 2">
+                            </div>
                             <figcaption>
                                 <h3>Plaza Goes</h3>
                                 <p>Venta o alquiler de apartamentos a estrenar en espectacular punto geográfico de la
                                     ciudad. </p>
                             </figcaption>
-                            <a href="#">Más información</a>
+                            <a class="boton-link--destacadas" href="#">Más información</a>
                         </figure>
                     </article>
                 </div>
@@ -117,7 +121,7 @@
 
         <!-- MODAL -->
 
-      
+
 
 
 
@@ -151,121 +155,196 @@
         <section id="informacion_personalizada" class="container p-2 mt-4">
             <div id="info_personalizada" class="row  h-100 m-0 py-4">
                 <article id="info" class="col-sm-12 col-md-6 text-center text-lg-start ">
-                    <h4>Nuevos lanzamientos</h4>
+                    <h4>Nuevos ingresos</h4>
                     <p>Ingrese su correo electrónico para recibir nuestras novedades</p>
                 </article>
                 <article id="article_suscripcion" class="col-sm-12 col-md-6 pt-4">
                     <input id="mail" type="email" name="">
-                    <a href="#">Suscribirse</a>
+                    <a class="boton-link--info" href="#">Suscribirse</a>
                 </article>
             </div>
         </section>
 
 
         <!-- PROPIEDADES DESTACADAS 2 -->
+
+
         <section id="propiedades_destacadas2" class="container mt-4 text-center">
+
             <div class="row h-100">
-                <div class="col-sm-12 col-md-3 p-2">
-                    <article id="foto_grande" class="imagen-con-marco2 p-2 h-100 ">
+
+                <div class="marco2 col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+                    <article id="foto_grande"
+                        class="imagen-con-marco2 p-2 h-100 d-flex flex-column justify-content-between">
                         <figure class="">
-                            <img src="./images/Villa Karpov.jpeg" alt="Villa Karpov">
+                            <div>
+                                <img src="./images/Villa Karpov.jpeg" alt="Villa Karpov">
+                            </div>
                             <figcaption>
                                 <h5>Villa Karpov</h5>
                                 <p>Espectacular vivienda con moderno diseño arquitectónico incomparable.</p>
                             </figcaption>
-                            <a href="#">Más información</a>
                         </figure>
+                        <div>
+                            <a href="#" class="boton-link--marco2 mt-auto ">Más información</a>
+                        </div>
                     </article>
                 </div>
 
-
-                <section id="fotos_chicas" class="col-sm-12 col-md-9 ">
+                <section id="fotos_chicas" class="col-12 col-sm-6 col-md-8  col-xl-9 ">
                     <section id="fotos_chicas_arriba" class="row h-50">
-
-                        <div class="col-sm-4 col-md-4  p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-12 col-md-6 col-lg-4 p-2">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure class="">
-                                    <img src="./images/Casa_Carlsen.jpeg" alt="Casa Carlsen">
+                                    <div>
+                                        <img src="./images/Casa_Carlsen.jpeg" alt="Casa Carlsen">
+                                    </div>
                                     <figcaption>
                                         <h6 class="mt-2">Casa Carlsen</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4 ">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
-                        <div class="col-sm-4 col-md-4 p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-6 col-lg-4 p-2 d-none d-md-block">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure>
-                                    <img src="./images/Casa_San_Sebastian.jpeg" alt="San Sebastián">
+                                    <div>
+                                        <img src="./images/Casa_San_Sebastian.jpeg" alt="San Sebastián">
+                                    </div>
                                     <figcaption>
                                         <h6 class="mt-2">San Sebastián</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
-                        <div class="col-sm-4 col-md-4 p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-4 p-2 d-none d-lg-block">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure>
-                                    <img src="./images/Casa_Capablanca.jpeg" alt="Casa Capablanca">
+                                    <div>
+                                        <img src="./images/Casa_Capablanca.jpeg" alt="Casa Capablanca">
+                                    </div>
+
                                     <figcaption>
                                         <h6 class="mt-2">Casa Capablanca</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
                     </section>
 
                     <section id="fotos_chicas_abajo" class="row h-50">
-
-                        <div class="col-sm-4 col-md-4  p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-12 col-md-6 col-lg-4  p-2">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure>
-                                    <img src="./images/La_Francesa.jpeg" alt="La Francesa">
+                                    <div>
+                                        <img src="./images/La_Francesa.jpeg" alt="La Francesa">
+                                    </div>
                                     <figcaption>
                                         <h6 class="mt-2">La Francesa</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
-                        <div class="col-sm-4 col-md-4 p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-6 col-lg-4 p-2 d-none d-md-block">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure>
-                                    <img src="./images/La_Siciliana.jpeg" alt="La Siciliana">
+                                    <div>
+                                        <img src="./images/La_Siciliana.jpeg" alt="La Siciliana">
+                                    </div>
                                     <figcaption>
                                         <h6 class="mt-2">La Siciliana</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
-                        <div class="col-sm-4 col-md-4  p-2">
-                            <article class="imagen-con-marco3 h-100">
+                        <div class="marco3 col-4  p-2 d-none d-lg-block">
+                            <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
                                 <figure>
-                                    <img src="./images/Villa_Alekine.jpeg" alt="Villa Alekine">
+                                    <div>
+                                        <img src="./images/Villa_Alekine.jpeg" alt="Villa Alekine">
+                                    </div>
                                     <figcaption>
                                         <h6 class="mt-2">Villa Alekine</h6>
                                     </figcaption>
-                                    <a href="#" class="mt-0 mt-md-4">Más información</a>
                                 </figure>
+                                <div>
+                                    <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                                </div>
                             </article>
                         </div>
-
-
-
                     </section>
                 </section>
+            </div>
+
+            <div class="row h-100 d-md-none">
+                <div class="marco3 col-12 col-sm-6 p-2 ">
+                    <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
+                        <figure>
+                            <div>
+                                <img src="./images/Casa_Capablanca.jpeg" alt="Casa Capablanca">
+                            </div>
+                            <figcaption>
+                                <h6 class="mt-2">Casa Capablanca</h6>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="marco3 col-12 col-sm-6  p-2 ">
+                    <article class="imagen-con-marco3 h-100 d-flex flex-column justify-content-between">
+                        <figure>
+                            <div>
+                                <img src="./images/Villa_Alekine.jpeg" alt="Villa Alekine">
+                            </div>
+                            <figcaption>
+                                <h6 class="mt-2">Villa Alekine</h6>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <a href="#" class="boton-link--marco3 mt-auto ">Más información</a>
+                        </div>
+                    </article>
+                </div>
 
             </div>
 
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -304,7 +383,7 @@
                     </article>
                     <article id="datos_contacto"
                         class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3  mt-4 m-sm-0  d-flex justify-content-center">
-                        <div class="ps-4">                          
+                        <div class="ps-4">
 
                             <h5 class="ms-1">Datos Contacto:</h5>
                             <nav id="nav_redes_contacto" class="p-0 m-0">

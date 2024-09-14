@@ -103,6 +103,100 @@ main {
   padding: 0;
   border: 0;
 }
+main .boton-link, main .boton-link--marco5, main .boton-link--marco4, main .boton-link--marco3, main .boton-link--marco2, main .boton-link--info, main .boton-link--destacadas {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+}
+main .boton-link:hover, main .boton-link--marco5:hover, main .boton-link--marco4:hover, main .boton-link--marco3:hover, main .boton-link--marco2:hover, main .boton-link--info:hover, main .boton-link--destacadas:hover {
+  transition: 0.2s;
+}
+main .boton-link--destacadas {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-top: 26px;
+}
+main .boton-link--destacadas:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  letter-spacing: 5px;
+}
+main .boton-link--info {
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 20px 0px 20px 40px;
+}
+main .boton-link--info:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  letter-spacing: 5px;
+}
+main .boton-link--marco2 {
+  padding: 9px 18px 9px 18px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+main .boton-link--marco2:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main .boton-link--marco3 {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+main .boton-link--marco3:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main .boton-link--marco4 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  z-index: 1;
+}
+main .boton-link--marco4:hover {
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+main .boton-link--marco5 {
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+  border: 2px solid rgb(102, 36, 0);
+  color: rgb(102, 36, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  width: 100%;
+}
+main .boton-link--marco5:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  letter-spacing: 5px;
+}
 main #imagenIndex {
   position: relative;
   display: inline-block;
@@ -145,52 +239,25 @@ main #propiedades_destacadas p {
   margin-left: 10px;
   margin-right: 10px;
 }
-main #propiedades_destacadas a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(102, 36, 0);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 400;
-  margin-top: 26px;
-}
-main #propiedades_destacadas a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
-}
 main #propiedades_destacadas .destacadas {
   border: solid 1px rgba(102, 36, 0, 0.3);
   background-color: rgb(255, 255, 255);
 }
-main #propiedades_destacadas .destacadas img {
+main #propiedades_destacadas .destacadas figure div {
+  overflow: hidden;
+}
+main #propiedades_destacadas .destacadas figure div img {
   width: 100%;
   height: 340px;
   object-fit: cover;
 }
+main #propiedades_destacadas .destacadas figure div img:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
 main #info_personalizada {
   text-align: center;
   background-color: rgb(255, 255, 255);
-}
-main #info_personalizada a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(102, 36, 0);
-  color: rgb(255, 255, 255);
-  padding: 8px 24px 8px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 200;
-  margin: 20px 20px 20px 40px;
-}
-main #info_personalizada a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
 }
 main #info_personalizada #mail {
   width: 300px;
@@ -223,37 +290,37 @@ main .imagen-con-marco2 {
   border: solid 1px rgba(102, 36, 0, 0.3);
   background-color: rgb(255, 255, 255);
 }
-main .imagen-con-marco2 img {
+main .imagen-con-marco2 figure {
+  margin: 0;
+}
+main .imagen-con-marco2 figure div {
+  overflow: hidden;
+}
+main .imagen-con-marco2 figure div img {
   width: 100%;
   height: 340px;
   object-fit: cover;
   display: block;
 }
-main .imagen-con-marco2 h5 {
+main .imagen-con-marco2 figure div img:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
+main .imagen-con-marco2 figure h5 {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 10px;
   letter-spacing: 8px;
   font-size: 1rem;
+  font-weight: 600;
 }
-main .imagen-con-marco2 a {
+main .marco2 {
   display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(102, 36, 0);
-  color: rgb(255, 255, 255);
-  padding: 9px 18px 9px 18px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  font-weight: 400;
-  margin-top: 24px;
+  height: 580px;
 }
-main .imagen-con-marco2 a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
-  font-weight: 500;
-  letter-spacing: 4px;
+main .marco3 {
+  display: inline-block;
+  height: 290px;
 }
 main .imagen-con-marco3 {
   display: block;
@@ -261,34 +328,26 @@ main .imagen-con-marco3 {
   border: solid rgba(90, 13, 13, 0.196) 1px;
   background-color: rgb(255, 255, 255);
 }
-main .imagen-con-marco3 img {
+main .imagen-con-marco3 figure {
+  margin: 0;
+}
+main .imagen-con-marco3 figure div {
+  overflow: hidden;
+}
+main .imagen-con-marco3 figure div img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
-main .imagen-con-marco3 h6 {
+main .imagen-con-marco3 figure div img:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
+main .imagen-con-marco3 figure h6 {
   text-align: center;
   letter-spacing: 3px;
   font-size: 0.9rem;
   font-weight: 600;
-}
-main .imagen-con-marco3 a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(102, 36, 0);
-  color: rgb(255, 255, 255);
-  padding: 8px 16px 8px 16px;
-  border-radius: 8px;
-  font-size: 0.7rem;
-  letter-spacing: 3px;
-  font-weight: 400;
-}
-main .imagen-con-marco3 a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
-  font-weight: 500;
-  letter-spacing: 4px;
 }
 main #imagen_inferior {
   margin-top: 60px;
@@ -315,7 +374,7 @@ main #imagen_inferior h2 {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-.imagen_con_marco4 {
+.imagen-con-marco4 {
   border: solid 1px rgba(102, 36, 0, 0.3);
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -323,12 +382,20 @@ main #imagen_inferior h2 {
   justify-content: center;
   height: 400px;
 }
-.imagen_con_marco4 img {
+.imagen-con-marco4 div {
+  overflow: hidden;
+  width: 100%;
+}
+.imagen-con-marco4 div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.imagen_con_marco4 h2 {
+.imagen-con-marco4 div img:hover {
+  transform: scale(1.08);
+  transition: 0.8s;
+}
+.imagen-con-marco4 h2 {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -340,27 +407,7 @@ main #imagen_inferior h2 {
   background-color: rgba(0, 0, 0, 0.777);
   padding: 12px 24px;
   letter-spacing: 4px;
-}
-.imagen_con_marco4 a {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  margin-top: 280px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: rgb(102, 36, 0);
-  border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  padding: 12px 32px;
-  border-radius: 10px;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 400;
-}
-.imagen_con_marco4 a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .filtros_seleccionados h6 {
@@ -400,6 +447,9 @@ main #imagen_inferior h2 {
   border-color: rgba(102, 36, 0, 0.427);
   box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
 }
+.form-select:hover {
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+}
 
 #propiedades_venta h4 {
   color: rgb(102, 36, 0);
@@ -412,45 +462,47 @@ main #imagen_inferior h2 {
   display: inline-block;
 }
 
-.imagen-con-marco4 {
+.imagen-con-marco5 {
   display: block;
   padding: 8px;
   border: solid 1px rgba(102, 36, 0, 0.3);
   background-color: rgb(255, 255, 255);
+  /*   a {
+         align-items: center;//
+         margin-top: 30px;
+         display: inline-block;//
+         text-align: center;
+         text-decoration: none;//
+         border: 2px solid $color-base1;
+         color: $color-base1;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         border-radius: 10px;
+         font-size: 1rem;
+         letter-spacing: 4px;
+         font-weight: 600;
+         width: 100%;
+
+         &:hover {
+             transition: 0.2s;
+             box-shadow: 0 0 0 0.25rem $color-base1;
+             letter-spacing: 5px;
+         }
+     }*/
 }
-.imagen-con-marco4 img {
+.imagen-con-marco5 img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
-.imagen-con-marco4 h5 {
+.imagen-con-marco5 h5 {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.imagen-con-marco4 p {
+.imagen-con-marco5 p {
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 6px;
-}
-.imagen-con-marco4 a {
-  align-items: center;
-  margin-top: 30px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid rgb(102, 36, 0);
-  color: rgb(102, 36, 0);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 600;
-  width: 100%;
-}
-.imagen-con-marco4 a:hover {
-  transition: 0.2s;
-  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
 }
 
 #propiedades_alquiler h4 {

@@ -6,6 +6,126 @@ main {
     padding: 0;
     border: 0;
 
+
+    .boton-link {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        background-color: $color-base1;
+        color: $color-fondo1;
+
+        &:hover {
+            transition: 0.2s;
+        }
+    }
+
+    .boton-link--destacadas {
+        @extend .boton-link;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 400;
+        margin-top: 26px;
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            letter-spacing: 5px;
+        }
+    }
+
+
+    .boton-link--info {
+        @extend .boton-link;
+        padding: 8px 24px 8px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 200;
+        margin: 20px 0px 20px 40px;
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            letter-spacing: 5px;
+        }
+    }
+
+
+    .boton-link--marco2 {
+        @extend .boton-link;
+        padding: 9px 18px 9px 18px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        font-weight: 400;
+        margin-bottom: 18px;
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+    }
+
+
+    .boton-link--marco3 {
+        @extend .boton-link;
+        padding: 8px 16px 8px 16px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+        font-weight: 400;
+        margin-bottom: 18px;
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+    }
+
+
+    .boton-link--marco4 {
+        @extend .boton-link;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
+        border: 1px solid $color-fondo1;
+        padding: 12px 32px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 400;
+        z-index: 1;
+
+        &:hover {         
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+    }
+
+    .boton-link--marco5 {
+        @extend .boton-link;   
+        background-color: $color-fondo1;          
+        margin-top: 30px;              
+        border: 2px solid $color-base1;
+        color: $color-base1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+        width: 100%;
+
+        &:hover {         
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            letter-spacing: 5px;
+        }
+    }
+
+
     #imagenIndex {
         position: relative;
         display: inline-block;
@@ -60,34 +180,31 @@ main {
             margin-right: 10px;
         }
 
-        a {
-            display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            background-color: $color-base1;
-            color: $color-fondo1;
-            padding: 10px 20px 10px 20px;
-            border-radius: 10px;
-            font-size: 1rem;
-            letter-spacing: 4px;
-            font-weight: 400;
-            margin-top: 26px;
-
-            &:hover{
-                transition: 0.2s; 
-                box-shadow: 0 0 0 0.25rem $color-base1;         
-            }
-        }
-
         .destacadas {
             border: solid 1px $color-base1-recuadro;
             background-color: $color-fondo1;
 
-            img {
-                width: 100%;
-                height: 340px;
-                object-fit: cover;
+
+            figure {
+                div {
+
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 340px;
+                        object-fit: cover;
+
+
+                        &:hover {
+                            transform: scale(1.08);
+                            transition: 0.8s;
+                        }
+                    }
+                }
+
             }
+
         }
     }
 
@@ -97,25 +214,6 @@ main {
     #info_personalizada {
         text-align: center;
         background-color: $color-fondo1;
-
-        a {
-            display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            background-color: $color-base1;
-            color: $color-fondo1;
-            padding: 8px 24px 8px 24px;
-            border-radius: 8px;
-            font-size: 1rem;
-            letter-spacing: 4px;
-            font-weight: 200;
-            margin: 20px 20px 20px 40px;
-
-            &:hover{
-                transition: 0.2s; 
-                box-shadow: 0 0 0 0.25rem $color-base1;         
-            }
-        }
 
         #mail {
             width: 300px;
@@ -156,41 +254,45 @@ main {
         border: solid 1px $color-base1-recuadro;
         background-color: $color-fondo1;
 
-        img {
-            width: 100%;
-            height: 340px;
-            object-fit: cover;
-            display: block;
-        }
+        figure {
+            margin: 0;
 
-        h5 {
-            text-align: center;
-            margin-top: 12px;
-            margin-bottom: 10px;
-            letter-spacing: 8px;
-            font-size: 1rem;
-        }
+            div {
+                overflow: hidden;
 
-        a {
-            display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            background-color: $color-base1;
-            color: $color-fondo1;
-            padding: 9px 18px 9px 18px;
-            border-radius: 10px;
-            font-size: 0.8rem;
-            letter-spacing: 3px;
-            font-weight: 400;
-            margin-top: 24px;
+                img {
+                    width: 100%;
+                    height: 340px;
+                    object-fit: cover;
+                    display: block;
 
-            &:hover{
-                transition: 0.2s; 
-                box-shadow: 0 0 0 0.25rem $color-base1; 
-                font-weight: 500;   
-                letter-spacing: 4px;     
+                    &:hover {
+                        transform: scale(1.08);
+                        transition: 0.8s;
+                    }
+                }
+            }
+
+            h5 {
+                text-align: center;
+                margin-top: 12px;
+                margin-bottom: 10px;
+                letter-spacing: 8px;
+                font-size: 1rem;
+                font-weight: 600;
             }
         }
+    }
+
+    .marco2 {
+
+        display: inline-block;
+        height: 580px;
+    }
+
+    .marco3 {
+        display: inline-block;
+        height: 290px;
     }
 
     .imagen-con-marco3 {
@@ -199,36 +301,29 @@ main {
         border: solid rgba(90, 13, 13, 0.196) 1px;
         background-color: $color-fondo1;
 
-        img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-        }
+        figure {
+            margin: 0;
 
-        h6 {
-            text-align: center;
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
+            div {
+                overflow: hidden;
 
-        a {
-            display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            background-color: $color-base1;
-            color: $color-fondo1;
-            padding: 8px 16px 8px 16px;
-            border-radius: 8px;
-            font-size: 0.7rem;
-            letter-spacing: 3px;
-            font-weight: 400;
+                img {
+                    width: 100%;
+                    height: 160px;
+                    object-fit: cover;
 
-            &:hover{
-                transition: 0.2s; 
-                box-shadow: 0 0 0 0.25rem $color-base1; 
-                font-weight: 500; 
-                letter-spacing: 4px;       
+                    &:hover {
+                        transform: scale(1.08);
+                        transition: 0.8s;
+                    }
+                }
+            }
+
+            h6 {
+                text-align: center;
+                letter-spacing: 3px;
+                font-size: 0.9rem;
+                font-weight: 600;
             }
         }
     }
@@ -273,19 +368,30 @@ main {
 ////////////////   PÁGINA VENTAS   //////////   
 
 
-.imagen_con_marco4 {
+.imagen-con-marco4 {
     border: solid 1px $color-base1-recuadro;
     background-color: $color-fondo1;
     position: relative;
-    display: flex;
+    display: flex;    
     justify-content: center;
     height: 400px;
 
-    img {
+    div {
+        overflow: hidden;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.08);
+                transition: 0.8s;
+            }
+        }
     }
+
 
     h2 {
         position: absolute;
@@ -299,30 +405,10 @@ main {
         background-color: $color-background-h;
         padding: 12px 24px;
         letter-spacing: 4px;
+        z-index: 1;
     }
 
-    a {
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin-top: 280px;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        background-color: $color-base1;
-        border: 1px solid $color-fondo1;
-        color: $color-fondo1;
-        padding: 12px 32px;
-        border-radius: 10px;
-        font-size: 1rem;
-        letter-spacing: 4px;
-        font-weight: 400;
 
-        &:hover{
-            transition: 0.2s; 
-            box-shadow: 0 0 0 0.25rem $color-fondo1;         
-        }
-    }
 }
 
 .filtros_seleccionados {
@@ -336,19 +422,19 @@ main {
     }
 
     a {
-        display: inline-block;
-        text-decoration: none;
+        display: inline-block;  
+        text-decoration: none;  
         border: 3px solid $color-base1;
         padding: 6px 12px;
         border-radius: 8px;
-        color: $color-base1;
+        color: $color-base1;    
         margin: 4px 4px 4px 12px;
         letter-spacing: 3px;
         font-weight: 500;
 
-        &:hover{
-            transition: 0.2s; 
-            box-shadow: 0 0 0 0.25rem $color-base1;         
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 0 0.25rem $color-base1;
         }
     }
 }
@@ -368,6 +454,10 @@ main {
         box-shadow: 0 0 0 0.25rem $color-base1-focus;
 
     }
+
+    &:hover {
+        box-shadow: 0 0 0 0.25rem $color-base1-focus;
+    }
 }
 
 
@@ -385,7 +475,7 @@ main {
     }
 }
 
-.imagen-con-marco4 {
+.imagen-con-marco5 {
     display: block;
     padding: 8px;
     border: solid 1px $color-base1-recuadro;
@@ -408,12 +498,12 @@ main {
         margin-bottom: 6px;
     }
 
-    a {
-        align-items: center;
+ /*   a {
+        align-items: center;//
         margin-top: 30px;
-        display: inline-block;
+        display: inline-block;//
         text-align: center;
-        text-decoration: none;
+        text-decoration: none;//
         border: 2px solid $color-base1;
         color: $color-base1;
         padding-top: 10px;
@@ -424,11 +514,12 @@ main {
         font-weight: 600;
         width: 100%;
 
-        &:hover{
-            transition: 0.2s; 
-            box-shadow: 0 0 0 0.25rem $color-base1;         
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            letter-spacing: 5px;
         }
-    }
+    }*/
 }
 
 
@@ -468,7 +559,7 @@ main {
         height: 200px;
         object-fit: cover;
 
-        &:hover{            
+        &:hover {
             transform: scale(1.08);
             transition: 0.5s;
         }
@@ -599,16 +690,16 @@ main {
         margin-top: 10px;
         margin-bottom: 10px;
 
-        &:hover{
-            transition: 0.2s; 
-            box-shadow: 0 0 0 0.25rem $color-base1; 
-            font-weight: 600; 
-            letter-spacing: 5px;         
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            font-weight: 600;
+            letter-spacing: 5px;
         }
     }
 }
 
-#logo_casita{
+#logo_casita {
     width: 80px;
     height: auto;
 }
