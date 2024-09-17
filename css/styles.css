@@ -91,6 +91,10 @@ footer #datos_contacto div {
 footer #datos_contacto div h5 {
   display: inline-block;
 }
+footer #section_mapa_del_sitio a {
+  color: rgb(102, 36, 0);
+  letter-spacing: 2px;
+}
 
 body {
   background-color: rgba(40, 54, 53, 0.1);
@@ -134,6 +138,24 @@ main .boton-link--info {
   margin: 20px 0px 20px 40px;
 }
 main .boton-link--info:hover {
+  box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
+  letter-spacing: 5px;
+}
+main .boton {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(102, 36, 0);
+  color: rgb(255, 255, 255);
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 20px auto;
+}
+main .boton:hover {
+  transition: 0.2s;
   box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
   letter-spacing: 5px;
 }
@@ -264,6 +286,7 @@ main #info_personalizada #mail {
   height: 40px;
   border: solid 1px rgba(102, 36, 0, 0.9);
   font-size: 1rem;
+  margin-right: 20px;
 }
 main #info_personalizada h4 {
   color: rgb(102, 36, 0);
@@ -399,7 +422,7 @@ main #imagen_inferior img {
   text-align: center;
 }
 main #imagen_inferior h2 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: rgb(255, 255, 255);
   font-weight: bold;
   width: 80%;
@@ -411,50 +434,12 @@ main #imagen_inferior h2 {
   letter-spacing: 1px;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4), -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
+@media only screen and (min-width: 1024px) {
+  main #imagen_inferior h2 {
+    font-size: 2.4rem;
+  }
+}
 
-/*
-.imagen-con-marco4 {
-    border: solid 1px $color-base1-recuadro; //
-    background-color: $color-fondo1; //
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 400px;
-
-    div {
-        overflow: hidden;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-            &:hover {
-                transform: scale(1.08);
-                transition: 0.8s;
-            }
-        }
-    }
-
-
-    h2 {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        color: $color-fondo1;
-        font-weight: bold;
-        margin-top: 60px;
-        background-color: $color-background-h;
-        padding: 12px 24px;
-        letter-spacing: 4px;
-        z-index: 1;
-    }
-
-
-} */
 .filtros_seleccionados h6 {
   display: inline-block;
   padding: 6px 12px;
@@ -494,6 +479,7 @@ main #imagen_inferior h2 {
 }
 .form-select:hover {
   box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+  border: none;
 }
 
 #propiedades_venta h4 {
@@ -507,31 +493,6 @@ main #imagen_inferior h2 {
   display: inline-block;
 }
 
-/*
-.imagen-con-marco5 {
-    display: block;
-    padding: 8px;
-    border: solid 1px $color-base1-recuadro;
-    background-color: $color-fondo1;
-
-    img {
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
-    }
-
-    h5 {
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    p {
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 6px;
-    }
-
-} */
 #propiedades_alquiler h4 {
   color: rgb(102, 36, 0);
   letter-spacing: 3px;
@@ -544,7 +505,7 @@ main #imagen_inferior h2 {
 #nosotros h4 {
   color: rgb(102, 36, 0);
   letter-spacing: 4px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -565,7 +526,7 @@ main #imagen_inferior h2 {
 #staff h4 {
   color: rgb(102, 36, 0);
   letter-spacing: 4px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -578,6 +539,9 @@ main #imagen_inferior h2 {
   padding: 10px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(102, 36, 0, 0.3);
+}
+#staff .fundadores:hover {
+  border: 1px solid rgb(102, 36, 0);
 }
 #staff .fundadores figure {
   grid-area: figura;
@@ -635,15 +599,32 @@ main #imagen_inferior h2 {
   width: 100%;
   border-radius: 8px;
   margin-top: 4px;
+  outline: none;
 }
-.mi-formulario #consulta {
+.mi-formulario .form-control:focus {
+  border-color: rgba(102, 36, 0, 0.427);
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+}
+.mi-formulario .form-control:hover {
+  border: none;
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+}
+.mi-formulario .mi-consulta {
   width: 100%;
   height: 160px;
   border: 1px solid rgba(102, 36, 0, 0.3);
   resize: none;
   border-radius: 8px;
+  outline: none;
 }
-.mi-formulario #boton_formulario {
+.mi-formulario .mi-consulta:focus {
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+  border-color: rgba(102, 36, 0, 0.427);
+}
+.mi-formulario .mi-consulta:hover {
+  box-shadow: 0 0 0 0.25rem rgba(102, 36, 0, 0.427);
+}
+.mi-formulario .boton_formulario {
   padding: 8px 28px;
   color: rgb(255, 255, 255);
   background-color: rgb(102, 36, 0);
@@ -653,7 +634,7 @@ main #imagen_inferior h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.mi-formulario #boton_formulario:hover {
+.mi-formulario .boton_formulario:hover {
   transition: 0.2s;
   box-shadow: 0 0 0 0.25rem rgb(102, 36, 0);
   font-weight: 600;
@@ -663,6 +644,107 @@ main #imagen_inferior h2 {
 #logo_casita {
   width: 80px;
   height: auto;
+}
+
+#galeria img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#descripcion p {
+  text-align: justify;
+}
+#descripcion h3 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#descripcion h4 {
+  font-size: 1.2rem;
+}
+#descripcion h5 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.div-recuadro {
+  border: 1px solid rgba(102, 36, 0, 0.3);
+}
+.div-recuadro:hover {
+  border: 1px solid rgb(102, 36, 0);
+}
+
+#nav_descripcion img {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+#nav_descripcion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav_descripcion ul p {
+  display: inline-block;
+}
+
+#ubicacion h3 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#ubicacion h4 {
+  font-size: 1.2rem;
+}
+
+#mapa_ubicacion {
+  width: 100%;
+  height: 400px;
+}
+#mapa_ubicacion iframe {
+  width: 100%;
+  height: auto;
+}
+
+.arbol-navegacion li {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.arbol-navegacion li a {
+  color: rgb(102, 36, 0);
+}
+
+#mapa_sitio h2 {
+  color: rgb(102, 36, 0);
+  letter-spacing: 4px;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#mapa_sitio h3 {
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 10px 20px 10px 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-left: 4px solid rgb(178, 63, 0);
+  padding-left: 8px;
+  letter-spacing: 3px;
+}
+#mapa_sitio a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 34px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

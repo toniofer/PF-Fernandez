@@ -16,7 +16,7 @@ footer {
 
     nav {
         display: inline-block;
-     
+
 
         ul {
             list-style-type: none;
@@ -53,11 +53,19 @@ footer {
 
 
     #datos_contacto {
-        div{          
+        div {
             width: 240px;
-            h5{
+
+            h5 {
                 display: inline-block;
             }
+        }
+    }
+
+    #section_mapa_del_sitio {
+        a {
+            color: $color-base1;
+            letter-spacing: 2px;
         }
     }
 

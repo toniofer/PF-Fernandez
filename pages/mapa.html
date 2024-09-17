@@ -9,10 +9,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Proyecto Final Desarrollo Web CODERHOUSE 2024 - Contacto</title>
     <meta name="description"
-        content="Proyecto Final del curso de Desarrollo Web CODERHOUSE 2024 - Costa Inmobiliaria - Contacto">
+        content="Proyecto Final del curso de Desarrollo Web CODERHOUSE 2024 - Costa Inmobiliaria - Mapa del sitio">
     <meta name="keywords" content="Costa Inmobiliaria Proyecto Final DESARROLLO WEB CODERHOUSE">
 </head>
 
@@ -54,68 +55,40 @@
 
     <!-- MAIN -->
 
-    <div id="main_contacto">
-
-        <!--  IMAGEN CONTACTO -->
-
-        <section id="imagen_contacto" class="container-fluid p-0 position-relative">
-            <img src="../images/portada_inferior.jpeg" alt="" class="w-100 h-100">
-            <div class="d-flex flex-column text-center position-absolute top-50 w-100">
-                <h2>Horario de atención: </h2>
-                <h2>Lunes a Viernes de 8 a 18 hs.</h2>
-                <h2>Sábados de 8 a 13 hs.</h2>
-            </div>
-        </section>
+    <main>
 
         <!-- ARBOL NAVEGACION -->
 
-        <section id="arbol_navegacion_contacto" class="arbol-navegacion container my-4 ">
+        <section id="arbol_navegacion_mapa" class="arbol-navegacion container my-4 ">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Contacto</li>
+                    <li class="breadcrumb-item" aria-current="page">Mapa del sitio</li>
                 </ol>
             </nav>
         </section>
 
-        <!-- SECTION FORMULARIO Y DATOS CONTACTO -->
-
-        <section id="formulario_datos_contacto" class="container mt-4 p-2">
-
-            <!-- FORMULARIO DE CONTACTO -->
-
-            <article id="formulario_contacto" class="container my-4 p-4">
-                <h3 class="mb-4">Formulario de contacto</h3>
-                <form action="" method="" id="formulario" class="mi-formulario p-4">
-                    <div class="row g-3">
-                        <div id="div_nombre" class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" required>
-                        </div>
-                        <div id="div_apellido" class="col-md-6">
-                            <label for="apellido" class="form-label">Apellido:</label>
-                            <input type="text" id="apellido" name="apellido" class="form-control" required>
-                        </div>
-                        <div id="div_correo" class="col-md-6">
-                            <label for="correo" class="form-label">e-mail:</label>
-                            <input type="email" id="correo" name="correo" class="form-control" required>
-                        </div>
-                        <div id="div_telefono" class="col-md-6">
-                            <label for="telefono" class="form-label">Teléfono:</label>
-                            <input type="text" id="telefono" name="telefono" class="form-control">
-                        </div>
-                        <div id="div_consulta" class="col-12">
-                            <label for="consulta" class="form-label">Consulta:</label>
-                            <textarea name="consulta" id="consulta" class="mi-consulta" rows="5" required></textarea>
-                        </div>
-                        <div id="div_boton" class="col-12 text-center">
-                            <button type="submit" class="boton_formulario">Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </article>
+        <section id="mapa_sitio" class="container my-4">
+            <div class="">
+                <h2>Mapa del sitio</h2>
+                <div class="text-start p-4 mb-4">
+                    <h3>Inicio</h3>
+                    <a href="../index.html">Página de inicio de Costa Inmobiliaria </a>
+                    <h3>Venta</h3>
+                    <a href="./venta.html">Venta</a>
+                    <h3>Alquiler</h3>
+                    <a href="./alquiler.html">Alquiler</a>
+                    <h3>Nosotros</h3>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <h3>Contacto</h3>
+                    <a href="./contacto.html">Contacto</a>
+                    <h3>Mapa del sitio</h3>
+                    <a href="./mapa.html">Mapa del sitio</a>
+                </div>
+            </div>
         </section>
-    </div>
+
+    </main>
 
     <!-- FOOTER -->
 
@@ -133,6 +106,7 @@
                     <article id="datos_contacto"
                         class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3  mt-4 m-sm-0  d-flex justify-content-center">
                         <div class="ps-4">
+
                             <h5 class="ms-1">Datos Contacto:</h5>
                             <nav id="nav_redes_contacto" class="p-0 m-0">
                                 <ul>

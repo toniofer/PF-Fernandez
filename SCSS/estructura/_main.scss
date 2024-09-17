@@ -6,7 +6,6 @@ main {
     padding: 0;
     border: 0;
 
-
     .boton-link {
         display: inline-block;
         text-align: center;
@@ -34,7 +33,6 @@ main {
         }
     }
 
-
     .boton-link--info {
         @extend .boton-link;
         padding: 8px 24px 8px 24px;
@@ -50,6 +48,25 @@ main {
         }
     }
 
+    .boton {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        background-color: $color-base1;
+        color: $color-fondo1;
+        padding: 8px 24px 8px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 200;
+        margin: 20px auto;
+
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 0 0.25rem $color-base1;
+            letter-spacing: 5px;
+        }
+    }
 
     .boton-link--marco2 {
         @extend .boton-link;
@@ -67,7 +84,6 @@ main {
         }
     }
 
-
     .boton-link--marco3 {
         @extend .boton-link;
         padding: 8px 16px 8px 16px;
@@ -83,7 +99,6 @@ main {
             letter-spacing: 4px;
         }
     }
-
 
     .boton-link--marco4 {
         @extend .boton-link;
@@ -215,6 +230,7 @@ main {
             height: 40px;
             border: solid 1px $color-base1-hover;
             font-size: 1rem;
+            margin-right: 20px;
         }
 
         h4 {
@@ -357,18 +373,18 @@ main {
         @extend .imagen-con-marco;
         display: block;
         padding: 8px;
-    
+
         img {
             width: 100%;
             height: 160px;
             object-fit: cover;
         }
-    
+
         h5 {
             font-weight: 600;
             letter-spacing: 1px;
         }
-    
+
         p {
             font-weight: 600;
             letter-spacing: 1px;
@@ -376,14 +392,6 @@ main {
         }
 
     }
-
-
-
-
-
-
-
-
 
     .marco2 {
 
@@ -412,7 +420,7 @@ main {
         }
 
         h2 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             color: $color-fondo1;
             font-weight: bold;
             width: 80%;
@@ -427,58 +435,15 @@ main {
                 1px -1px 0 $color-borde-h,
                 -1px 1px 0 $color-borde-h,
                 1px 1px 0 $color-borde-h;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 2.4rem;
+            }
         }
     }
 }
 
-
-
-
 ////////////////   PÁGINA VENTAS   //////////   
-
-/*
-.imagen-con-marco4 {
-    border: solid 1px $color-base1-recuadro; //
-    background-color: $color-fondo1; //
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 400px;
-
-    div {
-        overflow: hidden;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-            &:hover {
-                transform: scale(1.08);
-                transition: 0.8s;
-            }
-        }
-    }
-
-
-    h2 {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        color: $color-fondo1;
-        font-weight: bold;
-        margin-top: 60px;
-        background-color: $color-background-h;
-        padding: 12px 24px;
-        letter-spacing: 4px;
-        z-index: 1;
-    }
-
-
-} */
 
 .filtros_seleccionados {
     h6 {
@@ -509,7 +474,6 @@ main {
 }
 
 .form-select {
-
     width: 180px;
     display: inline-block;
     padding-right: 20px;
@@ -521,14 +485,13 @@ main {
     &:focus {
         border-color: $color-base1-focus;
         box-shadow: 0 0 0 0.25rem $color-base1-focus;
-
     }
 
     &:hover {
         box-shadow: 0 0 0 0.25rem $color-base1-focus;
+        border: none;
     }
 }
-
 
 #propiedades_venta {
     h4 {
@@ -544,33 +507,6 @@ main {
     }
 }
 
-/*
-.imagen-con-marco5 {
-    display: block;
-    padding: 8px;
-    border: solid 1px $color-base1-recuadro;
-    background-color: $color-fondo1;
-
-    img {
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
-    }
-
-    h5 {
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    p {
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 6px;
-    }
-
-} */
-
-
 #propiedades_alquiler {
     h4 {
         color: $color-base1;
@@ -585,13 +521,11 @@ main {
 
 ////////////////      NOSOTROS    /////////////
 
-
 #nosotros {
-
     h4 {
         color: $color-base1;
         letter-spacing: 4px;
-        padding: 20px;
+        padding: 20px 20px 20px 0;
         font-size: 1.5rem;
         font-weight: 600;
     }
@@ -618,7 +552,7 @@ main {
     h4 {
         color: $color-base1;
         letter-spacing: 4px;
-        padding: 20px;
+        padding: 20px 20px 20px 0;
         font-size: 1.5rem;
         font-weight: 600;
     }
@@ -634,6 +568,10 @@ main {
         padding: 10px;
         background-color: $color-fondo1;
         border: 1px solid $color-base1-recuadro;
+
+        &:hover {
+            border: 1px solid $color-base1;
+        }
 
         figure {
             grid-area: figura;
@@ -700,9 +638,7 @@ main {
     }
 }
 
-
 .mi-formulario {
-
     border: 1px solid $color-base1;
 
     .form-control {
@@ -711,17 +647,39 @@ main {
         width: 100%;
         border-radius: 8px;
         margin-top: 4px;
+        outline: none;
+
+        &:focus {
+            border-color: $color-base1-focus;
+            box-shadow: 0 0 0 0.25rem $color-base1-focus;
+        }
+
+        &:hover {
+            border: none;
+            box-shadow: 0 0 0 0.25rem $color-base1-focus;
+        }
     }
 
-    #consulta {
+
+    .mi-consulta {
         width: 100%;
         height: 160px;
         border: 1px solid $color-base1-recuadro;
         resize: none;
         border-radius: 8px;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem $color-base1-focus;
+            border-color: $color-base1-focus;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem $color-base1-focus;
+        }
     }
 
-    #boton_formulario {
+    .boton_formulario {
         padding: 8px 28px;
         color: $color-fondo1;
         background-color: $color-base1;
@@ -743,4 +701,133 @@ main {
 #logo_casita {
     width: 80px;
     height: auto;
+}
+
+#galeria {
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+#descripcion {
+    p {
+        text-align: justify;
+    }
+
+    h3 {
+        color: $color-base1;
+        letter-spacing: 4px;
+        padding: 20px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+}
+
+.div-recuadro {
+    border: 1px solid $color-base1-recuadro;
+
+    &:hover {
+        border: 1px solid $color-base1;
+    }
+}
+
+#nav_descripcion {
+    img {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        p {
+            display: inline-block;
+
+        }
+
+    }
+}
+
+#ubicacion {
+    h3 {
+        color: $color-base1;
+        letter-spacing: 4px;
+        padding: 20px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+#mapa_ubicacion {
+    width: 100%;
+    height: 400px;
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.arbol-navegacion {
+    li {
+        letter-spacing: 2px;
+        font-weight: 500;
+
+        a {
+            color: $color-base1;
+        }
+    }
+}
+
+#mapa_sitio {
+
+    h2 {
+        color: $color-base1;
+        letter-spacing: 4px;
+        padding: 20px;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    h3 {
+        color: $color-base6;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin: 10px 20px 10px 20px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-left: 4px solid $color-base2;
+        padding-left: 8px;
+        letter-spacing: 3px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-base6;
+        margin-left: 34px;
+
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
 }
